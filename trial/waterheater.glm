@@ -17,12 +17,12 @@ clock {
 module residential;
 module tape;
 
-object waterheater {
-	name wh1;
-	object recorder {
-		name rec1;
-		file waterheater-${INTERVAL}.csv;
-		property temperature;
-		interval ${INTERVAL};
+object recorder {
+    name rec1;
+    file "/root/project/waterheater-${INTERVAL}.csv";
+    property temperature;
+    interval ${INTERVAL};
+};
+
 	};
 }
