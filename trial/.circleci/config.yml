@@ -1,0 +1,19 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: gridlabd/slac-master:190825
+    steps:
+      - checkout
+      - run:
+          name: Run the simulation and store output
+          command: |
+            for INTERVAL in 5 10 15; do
+              # Run the GridLAB-D simulation with the current INTERVAL value
+              sed -i "s/#define INTERVAL=10/#define INTERVAL=$INTERVAL/" my_test.glm
+              gridlabd my_test.glm
+              # Store the output CSV file as an artifact
+              mv waterheater-${INTERVAL}.csv /root/project/waterheater-${INTERVAL}.csv
+            done
+      - store_artifacts:
+          path: /root/project
