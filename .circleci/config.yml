@@ -14,6 +14,6 @@ jobs:
       - run:
           name: Run the simulation
           command: |
-            gridlabd watereater.glm
+            gridlabd waterheater.glm
       - store_artifacts:
           path: /root/project/trial
