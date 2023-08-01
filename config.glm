@@ -1,3 +1,3 @@
-#define TIMEZONE= "Europe/London"
-#define STARTTIME="2022-12-27 00:00:00 UTC"
-#define STOPTIME="2023-01-02 00:00:00 UTC"
+#define TIMEZONE="US/CA/San Francisco"
+#define STARTTIME="2022-12-27 00:00:00 PST"
+#define STOPTIME="2023-01-02 00:00:00 PST"
