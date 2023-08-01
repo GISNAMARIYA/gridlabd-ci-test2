@@ -11,5 +11,4 @@ jobs:
             gridlabd my_test.glm
       - store_artifacts:
           path: /root/project
-- store_artifacts:
-    path: waterheater-${INTERVAL}.csv
+
