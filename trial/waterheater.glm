@@ -8,8 +8,8 @@
 
 clock {
 	timezone PST+8PDT;
-	starttime "2015-01-01 0:00:00 PST";
-	stoptime "2015-01-02 0:00:00 PST";
+	starttime "2022-01-01 0:00:00 PST";
+	stoptime "2023-01-02 0:00:00 PST";
 }
 
 module residential;
