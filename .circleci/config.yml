@@ -11,4 +11,9 @@ jobs:
             gridlabd my_test.glm
       - store_artifacts:
           path: /root/project
-
+      - run:
+          name: Run the simulation
+          command: |
+            gridlabd watereater.glm
+      - store_artifacts:
+          path: /root/project/trial
