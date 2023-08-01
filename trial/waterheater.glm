@@ -7,9 +7,11 @@
 #set randomseed=1
 
 clock {
-	timezone PST+8PDT;
-	starttime "2022-01-01 0:00:00 PST";
-	stoptime "2023-01-02 0:00:00 PST";
+    timezone PST+8PDT;
+    starttime "2023-08-01 0:00:00 PST"; // Replace with the current date and time
+    stoptime "2023-08-02 0:00:00 PST";  // Replace with the desired end time
+}
+
 }
 
 module residential;
