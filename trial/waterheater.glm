@@ -19,7 +19,7 @@ module tape;
 
 object recorder {
     name rec1;
-    file "/root/project/waterheater-${INTERVAL}.csv";
+    file "/root/project/trial/waterheater-${INTERVAL}.csv";
     property temperature;
     interval ${INTERVAL};
 };
